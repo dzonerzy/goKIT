@@ -18,7 +18,7 @@ func main() {
 				if counter >= 10 {
 					break
 				}
-				if kit.Write([]byte(fmt.Sprintf("Hello world %d", counter))) {
+				if kit.Write(fmt.Sprintf("Hello world %d", counter)) {
 					log.Println("Data sent")
 					counter++
 					time.Sleep(1 * time.Second)
